@@ -3,7 +3,7 @@ let songs;
 const btn = document.querySelector(".play-btn");
 
 async function getSong() {
-  let a = await fetch(`../music/`);
+  let a = await fetch('../music/');
   let res = await a.text();
   let div = document.createElement("div");
   div.innerHTML = res;
