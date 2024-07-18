@@ -2,8 +2,8 @@ let currentSong = new Audio();
 let songs;
 const btn = document.querySelector(".play-btn");
 
-async function getSong(folder) {
-  let a = await fetch(`../${folder}/`);
+async function getSong() {
+  let a = await fetch(`../music/`);
   let res = await a.text();
   let div = document.createElement("div");
   div.innerHTML = res;
